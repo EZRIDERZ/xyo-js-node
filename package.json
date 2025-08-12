@@ -1,0 +1,28 @@
+{
+  "name": "xyo-js-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://REDACTED_GITHUB_TOKEN@github.com/EZRIDERZ/xyo-js-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/EZRIDERZ/xyo-js-node/issues"
+  },
+  "homepage": "https://github.com/EZRIDERZ/xyo-js-node#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "supertest": "^7.1.4"
+  }
+}
