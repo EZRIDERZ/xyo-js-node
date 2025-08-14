@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "start": "node src/api/server.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +15,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/EZRIDERZ/xyo-js-node/issues"
   },
@@ -23,6 +24,10 @@
   },
   "devDependencies": {
     "jest": "^30.0.5",
+    "jest-watch-typeahead": "^3.0.1",
     "supertest": "^7.1.4"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
