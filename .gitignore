@@ -1,0 +1,35 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Build & coverage
+coverage/
+dist/
+build/
+
+# Environnements & secrets
+.env
+.env.local
+.env.*.local
+.git-secrets-replacements.txt
+
+# Systèmes & éditeurs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Sauvegardes & fichiers temporaires
+*.bak
+*.tmp
+*.temp
+*.backup-*
