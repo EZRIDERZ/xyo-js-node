@@ -10,24 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://REDACTED_GITHUB_TOKEN@github.com/EZRIDERZ/xyo-js-node.git"
+    "url": "git+https://github.com/EZRIDERZ/xyo-js-node.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EZRIDERZ/xyo-js-node/issues"
-  },
-  "homepage": "https://github.com/EZRIDERZ/xyo-js-node#readme",
-  "dependencies": {
-    "express": "^5.1.0"
-  },
-  "devDependencies": {
-    "jest": "^30.0.5",
-    "jest-watch-typeahead": "^3.0.1",
-    "supertest": "^7.1.4"
-  },
-  "engines": {
-    "node": ">=18"
-  }
+  "license": "ISC"
 }
