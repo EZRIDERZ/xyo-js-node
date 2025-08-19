@@ -1,3 +1,9 @@
+# Clés et configs sensibles
+.env
+id.json
+*.key
+*.pem
+
 # Node.js
 node_modules/
 npm-debug.log*
