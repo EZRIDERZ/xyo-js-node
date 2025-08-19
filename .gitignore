@@ -3,6 +3,8 @@
 id.json
 *.key
 *.pem
+*secret*.txt
+secret.txt
 
 # Node.js
 node_modules/
