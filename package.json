@@ -5,8 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "start": "node src/api/server.js"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "start": "node src/api/server.js",
+    "start": "node scripts/sendTokenWithGPSMain.js",
+    "test": "node scripts/testEnv.js",
+    "mint": "node scripts/createMintDevnet.js",
+    "send": "node scripts/sendToken.js",
+    "send:gps": "node scripts/sendTokenWithGPS.js",
+    "update:gps": "node scripts/updateGPS.js"
+    }
+    
   },
   "repository": {
     "type": "git",
@@ -14,5 +22,16 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.4",
+    "@xyo-network/bound-witness": "^0.57.0",
+    "@xyo-network/data": "^5.0.7",
+    "bigint-buffer": "^1.1.5",
+    "bs58": "^6.0.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
 }

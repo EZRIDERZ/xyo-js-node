@@ -1,0 +1,37 @@
+on:
+  workflow_dispatch:
+    inputs:
+      recipient:
+        description: 'Adresse du destinataire'
+        required: true
+        default: '0x000000000000000000000000000000000000dead'
+      tokenId:
+        description: 'ID du token à transférer'
+        required: true
+        default: '1'
+      network:
+        description: 'Réseau cible (devnet/testnet/mainnet)'
+        required: true
+        default: 'devnet'
+jobs:
+  ritual-of-transfer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Exécuter le rituel
+        run: |
+          echo "Transfert du token ${{ github.event.inputs.tokenId }} vers ${{ github.event.inputs.recipient }} sur le réseau ${{ github.event.inputs.network }}"
+          npm run transfer -- \
+            --recipient=${{ github.event.inputs.recipient }} \
+            --tokenId=${{ github.event.inputs.tokenId }} \
+            --network=${{ github.event.inputs.network }}
